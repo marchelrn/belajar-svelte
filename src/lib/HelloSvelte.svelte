@@ -1,6 +1,6 @@
 <script>
+    import Logo from './Logo.svelte';
     const name = 'Marchel';
-    const src = 'https://www.programmerzamannow.com/_app/immutable/assets/favicon.C9-q6cEs.png';
 </script>
 <style>
     h1 {
@@ -10,4 +10,4 @@
 
 <h1>Hello {name.toUpperCase()}!</h1>
 
-<img src={src} alt="PZN" />
+<Logo />
