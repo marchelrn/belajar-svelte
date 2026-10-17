@@ -1,4 +1,4 @@
-<script>
+<script> // deep state
   let person = $state({
     firstName: 'User!',
     lastName: '',
