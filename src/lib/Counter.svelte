@@ -1,11 +1,12 @@
 <script>
-  let count = $state(0); // menggunakan reactive state
+  let count = $state([]); // derrived
+  let total = $derived(count.reduce((a, b) => a + b, 0));
 
   function increment() {
-    count++;
+    count.push(1);
   }
 </script>
 
-<h1>Counter : {count}</h1>
+<h1>{count.join(" + ")} = {total}</h1>
 
 <button onclick={increment}>Increment</button>
