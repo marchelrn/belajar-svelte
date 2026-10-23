@@ -12,6 +12,13 @@
   function increment() {
     count.push(1);
   }
+
+  // dalam svelte untuk melakukan debugging langsung
+  // di browser adalah dengan menggunakan rune $inspect
+  // hanya berlaku di mode development
+  $inspect(count).with((type, values) => {
+    console.log(type, values)
+  });
 </script>
 
 <h1>{count.join(" + ")} = {total}</h1>
